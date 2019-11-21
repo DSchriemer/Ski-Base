@@ -52,17 +52,16 @@ public class MainActivity extends AppCompatActivity {
 
 
                 try {
-                    System.out.println("Trying here!!!");
-                    Document doc = Jsoup.connect("http://www.ssaurel.com/blog").get();
-                    System.out.println("Trying here1.5!!!");
+
+                    Document doc = Jsoup.connect("https://skifernie.com/conditions/snow-report/").get();
                     String title = doc.title();
-                    Elements links = doc.select("a[href]");
-                    System.out.println("Trying here2!!!");
+                    Elements links = doc.select("div[fhigh]"); //Select all hrefs
+
                     builder.append(title).append("\n");
-                    System.out.println("Trying here3!!!");
+
                     for ( Element link : links){
-                        System.out.println("ow ow ow!!!");
-                        builder.append("\n").append("Link: ").append(link.attr("href"))
+
+                        builder.append("\n").append("Link: ").append(link.attr("fhigh"))
                                 .append("\n").append("Text: ").append(link.text());
                     }
                 }
