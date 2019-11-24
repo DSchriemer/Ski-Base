@@ -48,7 +48,10 @@ public class MainActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                final StringBuilder builder2 = new StringBuilder();
+                final StringBuilder wind = new StringBuilder();
+                final StringBuilder high = new StringBuilder();
+                final StringBuilder low = new StringBuilder();
+                final StringBuilder conditions = new StringBuilder();
 
 
                 try {
