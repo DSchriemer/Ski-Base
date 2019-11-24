@@ -48,32 +48,33 @@ public class MainActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                final StringBuilder builder = new StringBuilder();
+                final StringBuilder builder2 = new StringBuilder();
 
 
                 try {
 
-                    Document doc = Jsoup.connect("https://skifernie.com/conditions/snow-report/").get();
-                    String title = doc.title();
-                    Elements links = doc.select("div[fhigh]"); //Select all hrefs
+                    String url = "https://stackoverflow.com/questions/2835505";
+                    Document document = Jsoup.connect(url).get();
 
-                    builder.append(title).append("\n");
+                    String question = document.select("#question .post-text").text();
+                    builder2.append("Question: " + question).append("\n");
 
-                    for ( Element link : links){
-
-                        builder.append("\n").append("Link: ").append(link.attr("fhigh"))
-                                .append("\n").append("Text: ").append(link.text());
+                    Elements answerers = document.select("#answers .user-details a");
+                    for (Element answerer : answerers) {
+                        builder2.append("Answerer: " + answerer.text()).append("\n");
                     }
+
+
                 }
                 catch (IOException e) {
-                    builder.append("error").append(e.getMessage()).append("\n");
+                    builder2.append("error").append(e.getMessage()).append("\n");
                     System.out.println(e.getMessage());
                 }
 
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        result.setText(builder.toString());
+                        result.setText(builder2.toString());
                     }
                 });
 
