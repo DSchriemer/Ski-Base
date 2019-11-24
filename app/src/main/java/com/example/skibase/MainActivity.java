@@ -53,13 +53,13 @@ public class MainActivity extends AppCompatActivity {
 
                 try {
 
-                    String url = "https://stackoverflow.com/questions/2835505";
+                    String url = "https://skifernie.com/conditions/";
                     Document document = Jsoup.connect(url).get();
 
-                    String question = document.select("#question .post-text").text();
-                    builder2.append("Question: " + question).append("\n");
+                    //String question = document.select("#question .post-text").text();
+                    //builder2.append("Question: " + question).append("\n");
 
-                    Elements answerers = document.select("#answers .user-details a");
+                    Elements answerers = document.select("div.fhigh");
                     for (Element answerer : answerers) {
                         builder2.append("Answerer: " + answerer.text()).append("\n");
                     }
