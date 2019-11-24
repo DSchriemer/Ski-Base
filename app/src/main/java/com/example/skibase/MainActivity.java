@@ -49,35 +49,44 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 final StringBuilder wind = new StringBuilder();
-                final StringBuilder high = new StringBuilder();
-                final StringBuilder low = new StringBuilder();
+                final StringBuilder temp = new StringBuilder();
                 final StringBuilder conditions = new StringBuilder();
 
 
                 try {
 
-                    String url = "https://skifernie.com/conditions/";
+                    String url = "https://www.snow-forecast.com/resorts/Fernie/6day/mid";
                     Document document = Jsoup.connect(url).get();
 
                     //String question = document.select("#question .post-text").text();
                     //builder2.append("Question: " + question).append("\n");
 
-                    Elements answerers = document.select("div.fhigh");
-                    for (Element answerer : answerers) {
-                        builder2.append("Answerer: " + answerer.text()).append("\n");
+                    Elements winders = document.select("div.forecast-table-wind__container");
+                    for (Element answer : winders) {
+                        wind.append(answer.text()).append("\n");
+                    }
+                    Elements temps = document.select("div.forecast-table-temp__container");
+                    for (Element answerer : temps) {
+                        temp.append(answerer.text()).append("\n");
+                    }
+
+
+                    Elements conditioners = document.select("div.forecast-table-phrases__container");
+                    for (Element answerer : conditioners) {
+                        conditions.append(answerer.text()).append("\n");
                     }
 
 
                 }
                 catch (IOException e) {
-                    builder2.append("error").append(e.getMessage()).append("\n");
+                    wind.append("error").append(e.getMessage()).append("\n");
                     System.out.println(e.getMessage());
                 }
 
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        result.setText(builder2.toString());
+                        result.setText(high.toString());
                     }
                 });
 
