@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        result.setText(high.toString());
+                        result.setText(temp.toString());
                     }
                 });
 
