@@ -19,9 +19,9 @@
         android:layout_width="597dp"
         android:layout_height="678dp"
         android:background="@drawable/textview_border"
-        android:text=""
+        android:textSize="36sp"
         tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="202dp" />
+        tools:layout_editor_absoluteY="200dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -46,7 +46,7 @@
         android:layout_width="74dp"
         android:layout_height="66dp"
         app:srcCompat="@drawable/th"
-        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteX="295dp"
         tools:layout_editor_absoluteY="494dp" />
 
     <ImageView
@@ -54,6 +54,14 @@
         android:layout_width="74dp"
         android:layout_height="66dp"
         app:srcCompat="@drawable/wind"
+        tools:layout_editor_absoluteX="398dp"
+        tools:layout_editor_absoluteY="494dp" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="74dp"
+        android:layout_height="66dp"
+        app:srcCompat="@drawable/snowl"
         tools:layout_editor_absoluteX="491dp"
         tools:layout_editor_absoluteY="494dp" />
 
@@ -69,7 +77,7 @@
         android:id="@+id/imageView13"
         android:layout_width="74dp"
         android:layout_height="66dp"
-        app:srcCompat="@drawable/fff"
+        app:srcCompat="@drawable/post"
         tools:layout_editor_absoluteX="55dp"
         tools:layout_editor_absoluteY="683dp" />
 
@@ -77,7 +85,7 @@
         android:id="@+id/imageView14"
         android:layout_width="74dp"
         android:layout_height="66dp"
-        app:srcCompat="@drawable/wdolf2"
+        app:srcCompat="@drawable/post1"
         tools:layout_editor_absoluteX="55dp"
         tools:layout_editor_absoluteY="775dp" />
 
@@ -86,7 +94,7 @@
         android:layout_width="300dp"
         android:layout_height="201dp"
         tools:layout_editor_absoluteX="182dp"
-        tools:layout_editor_absoluteY="270dp"
+        tools:layout_editor_absoluteY="266dp"
         tools:srcCompat="@drawable/snowing" />
 
     <TextView
@@ -161,6 +169,145 @@
         tools:layout_editor_absoluteX="182dp"
         tools:layout_editor_absoluteY="989dp"
         tools:srcCompat="@drawable/snowing" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:text="1"
+        android:gravity="center"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="599dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#F44336"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="599dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="398dp"
+        tools:layout_editor_absoluteY="768dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#3F51B5"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="768dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#2196F3"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="491dp"
+        tools:layout_editor_absoluteY="597dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#2196F3"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="491dp"
+        tools:layout_editor_absoluteY="683dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#2196F3"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="491dp"
+        tools:layout_editor_absoluteY="768dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="398dp"
+        tools:layout_editor_absoluteY="685dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#3F51B5"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="685dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="398dp"
+        tools:layout_editor_absoluteY="597dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#3F51B5"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="599dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#F44336"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="768dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#F44336"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="683dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
