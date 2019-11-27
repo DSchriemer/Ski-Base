@@ -14,59 +14,78 @@
     android:layout_height="match_parent">
 
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="597dp"
+        android:layout_height="678dp"
+        android:background="@drawable/textview_border"
+        android:text=""
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="202dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="597dp"
+        android:layout_height="678dp"
+        android:background="@drawable/textview_border"
+        android:text=""
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="908dp" />
+
+
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="74dp"
         android:layout_height="66dp"
         app:srcCompat="@drawable/upw"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="510dp" />
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="494dp" />
 
     <ImageView
         android:id="@+id/imageView15"
         android:layout_width="74dp"
         android:layout_height="66dp"
         app:srcCompat="@drawable/th"
-        tools:layout_editor_absoluteX="296dp"
-        tools:layout_editor_absoluteY="510dp" />
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="494dp" />
 
     <ImageView
         android:id="@+id/imageView16"
         android:layout_width="74dp"
         android:layout_height="66dp"
         app:srcCompat="@drawable/wind"
-        tools:layout_editor_absoluteX="436dp"
-        tools:layout_editor_absoluteY="510dp" />
+        tools:layout_editor_absoluteX="491dp"
+        tools:layout_editor_absoluteY="494dp" />
 
     <ImageView
         android:id="@+id/imageView12"
         android:layout_width="74dp"
         android:layout_height="66dp"
         app:srcCompat="@drawable/f"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="592dp" />
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="597dp" />
 
     <ImageView
         android:id="@+id/imageView13"
         android:layout_width="74dp"
         android:layout_height="66dp"
         app:srcCompat="@drawable/fff"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="672dp" />
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="683dp" />
 
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="74dp"
         android:layout_height="66dp"
         app:srcCompat="@drawable/wdolf2"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="753dp" />
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="775dp" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="300dp"
         android:layout_height="201dp"
-        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteX="182dp"
         tools:layout_editor_absoluteY="270dp"
         tools:srcCompat="@drawable/snowing" />
 
@@ -123,7 +142,7 @@
         android:layout_height="44dp"
         android:text="TODAY"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteX="274dp"
         tools:layout_editor_absoluteY="215dp" />
 
     <TextView
@@ -132,16 +151,17 @@
         android:layout_height="39dp"
         android:text="TOMORROW"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="203dp"
-        tools:layout_editor_absoluteY="914dp" />
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="942dp" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="201dp"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="976dp"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="989dp"
         tools:srcCompat="@drawable/snowing" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
