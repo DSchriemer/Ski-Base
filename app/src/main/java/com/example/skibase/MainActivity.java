@@ -6,6 +6,15 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Button;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.Date;
+import java.sql.Time;
+import java.util.GregorianCalendar;
+import java.util.TimeZone;
+
 import android.os.Bundle;
 
 import org.jsoup.Jsoup;
@@ -60,6 +69,16 @@ public class MainActivity extends AppCompatActivity {
 
                     //String question = document.select("#question .post-text").text();
                     //builder2.append("Question: " + question).append("\n");
+
+
+                    LocalTime l = LocalTime.now();
+                    temp.append(l.getHour());
+                    //l = l.getHour();
+
+                    //temp.append(hours).append("\n");
+
+                    Date currentTime = Calendar.getInstance().getTime();
+                    temp.append(currentTime);
 
                     Elements winders = document.select("div.forecast-table-wind__container");
                     for (Element answer : winders) {
