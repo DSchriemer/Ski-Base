@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button getBtn;
     TextView result;
+    TextView am4;
 
 
     @Override
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                     LocalTime l = LocalTime.now();
-                    temp.append(l.getHour());
+                    //temp.append(l.getHour());
                     //l = l.getHour();
 
                     //temp.append(hours).append("\n");
@@ -95,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
                         conditions.append(answerer.text()).append("\n");
                     }
 
+                    printScreen(wind,temp,conditions);
 
                 }
                 catch (IOException e) {
@@ -110,8 +112,29 @@ public class MainActivity extends AppCompatActivity {
                 });
 
 
+
+
             }
         }).start();
+
+    }
+
+    public void printScreen(StringBuilder w, StringBuilder t, StringBuilder c)
+    {
+        am4 = (TextView) findViewById(R.id.am4);
+
+
+
+        LocalTime l = LocalTime.now();
+
+        if (l.getHour() > 10)
+        {
+            am4.setText("7");
+        }
+
+
+
+
 
     }
 }
