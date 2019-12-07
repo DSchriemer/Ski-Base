@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                     for (Element answer : winders) {
                         wind.append(answer.text()).append("\n");
                     }
-                    Elements temps = document.select("div.forecast-table-temp__container");
+                    Elements temps = document.select("div.forecast-table-temp__container.has-background-temp");
                     for (Element answerer : temps) {
                         temp.append(answerer.text()).append("\n");
                     }
@@ -166,17 +166,16 @@ public class MainActivity extends AppCompatActivity {
                             }
                         }
 
+/*
 
-
-                        for(int i = 0; i<100;i++)
+                        for(int i = 0; i<200;i++)
                         {
-                            System.out.println("HERE: " + i + " " + (temp.charAt(i)));
+                            try {
 
-                            if (tvcounter2 <= 2)
-                            {
+                                if (tvcounter2 <= 2) {
                                     if ((String.valueOf(temp.charAt(i))).matches(".*[0-9].*") || (String.valueOf(temp.charAt(i)).matches("-"))) {
                                         System.out.println("Good: ");// + String.valueOf(temp.charAt(i)));
-                                        if (coldCount >=21) {
+                                        if (coldCount >= 21) {
 
                                             textViewArray2[tvcounter2].append(String.valueOf(temp.charAt(i)));
 
@@ -192,10 +191,14 @@ public class MainActivity extends AppCompatActivity {
 
                                 }
 
-                            }
+                            }catch (IOException e) {
+                                    wind.append("error").append(e.getMessage()).append("\n");
+                                    System.out.println(e.getMessage());
+                                }
                         }
+                        */
 
-
+                    }
 
                 });
 
