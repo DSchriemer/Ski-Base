@@ -120,18 +120,23 @@ public class MainActivity extends AppCompatActivity {
 
                         //TextView[] textViewArray = {am1,pm1,n1};
                         int tvcounter = 0;
+                        int tvcounter2 = 0;
+
 
                         am1 = (TextView) findViewById(R.id.am1);
                         pm1 = (TextView) findViewById(R.id.pm1);
                         n1 = (TextView) findViewById(R.id.n1);
                         am2 = (TextView) findViewById(R.id.am2);
-                        //pm2 = (TextView) findViewById(R.id.pm2);
-                        //n2 = (TextView) findViewById(R.id.n2);
+                        pm2 = (TextView) findViewById(R.id.pm2);
+                        n2 = (TextView) findViewById(R.id.n2);
                         //am3 = (TextView) findViewById(R.id.am3);
                         //pm3 = (TextView) findViewById(R.id.pm3);
                         //n3 = (TextView) findViewById(R.id.n3);
 
                         TextView[] textViewArray = {am1,pm1,n1};
+                        TextView[] textViewArray2 = {am2,pm2,n2};
+
+                        int coldCount =0;
 
 
                         //am1.setText(String.valueOf(temp.charAt(0)));
@@ -162,7 +167,36 @@ public class MainActivity extends AppCompatActivity {
                         }
 
 
-                    }
+
+                        for(int i = 0; i<100;i++)
+                        {
+                            System.out.println("HERE: " + i + " " + (temp.charAt(i)));
+
+                            if (tvcounter2 <= 2)
+                            {
+                                    if ((String.valueOf(temp.charAt(i))).matches(".*[0-9].*") || (String.valueOf(temp.charAt(i)).matches("-"))) {
+                                        System.out.println("Good: ");// + String.valueOf(temp.charAt(i)));
+                                        if (coldCount >=21) {
+
+                                            textViewArray2[tvcounter2].append(String.valueOf(temp.charAt(i)));
+
+                                        }
+
+                                        //i++;
+
+                                    } else {
+                                        System.out.println("next: ");
+                                        coldCount++;
+                                        tvcounter2++;
+                                    }
+
+                                }
+
+                            }
+                        }
+
+
+
                 });
 
 
