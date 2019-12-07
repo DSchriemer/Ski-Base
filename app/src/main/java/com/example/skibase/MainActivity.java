@@ -140,20 +140,20 @@ public class MainActivity extends AppCompatActivity {
 
                         for(int i = 0; i<40;i++)
                         {
-                            System.out.println("HERE: " + String.valueOf(temp.charAt(i)));
+                            System.out.println("HERE: " + i + " " + (temp.charAt(i)));
 
-                            if (tvcounter <= 8)
+                            if (tvcounter <= 2)
                             {
-                                if(String.valueOf(temp.charAt(i)) != null)
+                                if((String.valueOf(temp.charAt(i))).matches(".*[0-9].*") || (String.valueOf(temp.charAt(i)) == "-"))
                                 {
-                                    System.out.println(i);
-                                    System.out.println("HERE2: " + String.valueOf(temp.charAt(i)));
+                                    System.out.println("Good: ");// + String.valueOf(temp.charAt(i)));
                                     textViewArray[tvcounter].append(String.valueOf(temp.charAt(i)));
-                                    System.out.println("HERE3: " + String.valueOf(temp.charAt(i)));
-                                    i++;
+
+                                    //i++;
 
                                 }else{
-                                    i++;
+                                    System.out.println("next: ");
+
                                     tvcounter++;
                                 }
 
