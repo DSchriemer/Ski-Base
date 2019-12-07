@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Button;
+import java.lang.*;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalTime;
@@ -28,7 +29,19 @@ public class MainActivity extends AppCompatActivity {
 
     Button getBtn;
     TextView result;
-    TextView am4;
+    TextView am1;
+    TextView pm1;
+    TextView n1;
+    TextView am2;
+    TextView pm2;
+    TextView n2;
+    TextView am3;
+    TextView pm3;
+    TextView n3;
+
+    am1 = (TextView) findViewById(R.id.am1);
+    pm1 = (TextView) findViewById(R.id.pm1);
+    n1 = (TextView) findViewById(R.id.n1);
 
 
     @Override
@@ -78,8 +91,8 @@ public class MainActivity extends AppCompatActivity {
 
                     //temp.append(hours).append("\n");
 
-                    Date currentTime = Calendar.getInstance().getTime();
-                    temp.append(currentTime);
+                    //Date currentTime = Calendar.getInstance().getTime();
+                    //temp.append(currentTime);
 
                     Elements winders = document.select("div.forecast-table-wind__container");
                     for (Element answer : winders) {
@@ -96,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                         conditions.append(answerer.text()).append("\n");
                     }
 
-                    printScreen(wind,temp,conditions);
+                    //printScreen(wind,temp,conditions);
 
                 }
                 catch (IOException e) {
@@ -107,7 +120,17 @@ public class MainActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        result.setText(temp.toString());
+
+                        TextView[] textViewArray = {am1,pm1,n1,am2,pm2,n2,am3,pm3,n3};
+                        int tvcounter;
+
+
+
+
+                        am1.setText(String.valueOf(temp.charAt(0)));
+                        pm1.setText(String.valueOf(temp.charAt(2)));
+                        n1.setText(String.valueOf(temp.charAt(4)));
+
                     }
                 });
 
@@ -119,22 +142,27 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+        /*
     public void printScreen(StringBuilder w, StringBuilder t, StringBuilder c)
     {
-        am4 = (TextView) findViewById(R.id.am4);
+        am1 = (TextView) findViewById(R.id.am1);
+        pm1 = (TextView) findViewById(R.id.pm1);
+        n1 = (TextView) findViewById(R.id.n1);
 
 
 
         LocalTime l = LocalTime.now();
 
-        if (l.getHour() > 10)
+        if (l.getHour() > 20)
         {
-            am4.setText("7");
+            am1.setText(String.valueOf(temp.charAt(0)));
+            pm1.setText(String.valueOf(temp.charAt(1)));
+            n1.setText(String.valueOf(temp.charAt(2)));
         }
 
 
 
+*/
 
 
-    }
 }
