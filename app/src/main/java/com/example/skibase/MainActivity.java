@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button getBtn;
     TextView result;
+    TextView tmp;
     TextView am1;
     TextView pm1;
     TextView n1;
@@ -38,10 +39,6 @@ public class MainActivity extends AppCompatActivity {
     TextView am3;
     TextView pm3;
     TextView n3;
-
-    am1 = (TextView) findViewById(R.id.am1);
-    pm1 = (TextView) findViewById(R.id.pm1);
-    n1 = (TextView) findViewById(R.id.n1);
 
 
     @Override
@@ -121,15 +118,49 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
 
-                        TextView[] textViewArray = {am1,pm1,n1,am2,pm2,n2,am3,pm3,n3};
-                        int tvcounter;
+                        //TextView[] textViewArray = {am1,pm1,n1};
+                        int tvcounter = 0;
+
+                        am1 = (TextView) findViewById(R.id.am1);
+                        pm1 = (TextView) findViewById(R.id.pm1);
+                        n1 = (TextView) findViewById(R.id.n1);
+                        am2 = (TextView) findViewById(R.id.am2);
+                        //pm2 = (TextView) findViewById(R.id.pm2);
+                        //n2 = (TextView) findViewById(R.id.n2);
+                        //am3 = (TextView) findViewById(R.id.am3);
+                        //pm3 = (TextView) findViewById(R.id.pm3);
+                        //n3 = (TextView) findViewById(R.id.n3);
+
+                        TextView[] textViewArray = {am1,pm1,n1};
 
 
+                        //am1.setText(String.valueOf(temp.charAt(0)));
+
+                        //tmp.setText("y");
+
+                        for(int i = 0; i<40;i++)
+                        {
+                            System.out.println("HERE: " + String.valueOf(temp.charAt(i)));
+
+                            if (tvcounter <= 8)
+                            {
+                                if(String.valueOf(temp.charAt(i)) != null)
+                                {
+                                    System.out.println(i);
+                                    System.out.println("HERE2: " + String.valueOf(temp.charAt(i)));
+                                    textViewArray[tvcounter].append(String.valueOf(temp.charAt(i)));
+                                    System.out.println("HERE3: " + String.valueOf(temp.charAt(i)));
+                                    i++;
+
+                                }else{
+                                    i++;
+                                    tvcounter++;
+                                }
 
 
-                        am1.setText(String.valueOf(temp.charAt(0)));
-                        pm1.setText(String.valueOf(temp.charAt(2)));
-                        n1.setText(String.valueOf(temp.charAt(4)));
+                            }
+                        }
+
 
                     }
                 });
