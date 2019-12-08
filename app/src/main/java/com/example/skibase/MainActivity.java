@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
     TextView am3;
     TextView pm3;
     TextView n3;
+    TextView w1;
+    TextView w2;
+    TextView w3;
 
 
     @Override
@@ -126,9 +129,9 @@ public class MainActivity extends AppCompatActivity {
                         am1 = (TextView) findViewById(R.id.am1);
                         pm1 = (TextView) findViewById(R.id.pm1);
                         n1 = (TextView) findViewById(R.id.n1);
-                        am2 = (TextView) findViewById(R.id.am2);
-                        pm2 = (TextView) findViewById(R.id.pm2);
-                        n2 = (TextView) findViewById(R.id.n2);
+                        //am2 = (TextView) findViewById(R.id.am2);
+                       // pm2 = (TextView) findViewById(R.id.pm2);
+                        //n2 = (TextView) findViewById(R.id.n2);
                         //am3 = (TextView) findViewById(R.id.am3);
                         //pm3 = (TextView) findViewById(R.id.pm3);
                         //n3 = (TextView) findViewById(R.id.n3);
@@ -164,39 +167,15 @@ public class MainActivity extends AppCompatActivity {
 
 
                             }
-                        }
+                        } //end of temperature
 
-/*
+                        //beginning of wind
 
-                        for(int i = 0; i<200;i++)
-                        {
-                            try {
+                        w1 = (TextView) findViewById(R.id.w1);
+                        w2 = (TextView) findViewById(R.id.w1);
+                        w3 = (TextView) findViewById(R.id.w1);
 
-                                if (tvcounter2 <= 2) {
-                                    if ((String.valueOf(temp.charAt(i))).matches(".*[0-9].*") || (String.valueOf(temp.charAt(i)).matches("-"))) {
-                                        System.out.println("Good: ");// + String.valueOf(temp.charAt(i)));
-                                        if (coldCount >= 21) {
-
-                                            textViewArray2[tvcounter2].append(String.valueOf(temp.charAt(i)));
-
-                                        }
-
-                                        //i++;
-
-                                    } else {
-                                        System.out.println("next: ");
-                                        coldCount++;
-                                        tvcounter2++;
-                                    }
-
-                                }
-
-                            }catch (IOException e) {
-                                    wind.append("error").append(e.getMessage()).append("\n");
-                                    System.out.println(e.getMessage());
-                                }
-                        }
-                        */
+                        w1.append(String.valueOf(wind.charAt(0)));
 
                     }
 
