@@ -34,6 +34,22 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="63dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="115dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="463dp"
+            android:layout_marginEnd="215dp"
+            android:layout_marginRight="215dp"
+            android:layout_marginBottom="272dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/upw" />
+
+        <ImageView
             android:id="@+id/am"
             android:layout_width="65dp"
             android:layout_height="65dp"
@@ -95,6 +111,14 @@
             android:layout_height="50dp"
             app:srcCompat="@drawable/wind"
             tools:layout_editor_absoluteX="247dp"
+            tools:layout_editor_absoluteY="463dp" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="64dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/th"
+            tools:layout_editor_absoluteX="178dp"
             tools:layout_editor_absoluteY="463dp" />
 
         <ImageView
@@ -173,7 +197,7 @@
             tools:layout_editor_absoluteY="683dp" />
 
         <TextView
-            android:id="@+id/n2"
+            android:id="@+id/textView36"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:gravity="center"
@@ -239,7 +263,7 @@
             tools:layout_editor_absoluteY="602dp" />
 
         <TextView
-            android:id="@+id/pm2"
+            android:id="@+id/p"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:gravity="center"

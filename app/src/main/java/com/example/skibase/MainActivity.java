@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                     for (Element answer : winders) {
                         wind.append(answer.text()).append("\n");
                     }
-                    Elements temps = document.select("div.forecast-table-temp__container.has-background-temp");
+                    Elements temps = document.select("div.forecast-table-temp__container");
                     for (Element answerer : temps) {
                         temp.append(answerer.text()).append("\n");
                     }
