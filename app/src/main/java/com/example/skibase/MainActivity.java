@@ -172,10 +172,38 @@ public class MainActivity extends AppCompatActivity {
                         //beginning of wind
 
                         w1 = (TextView) findViewById(R.id.w1);
-                        w2 = (TextView) findViewById(R.id.w1);
-                        w3 = (TextView) findViewById(R.id.w1);
+                        w2 = (TextView) findViewById(R.id.w2);
+                        w3 = (TextView) findViewById(R.id.w3);
 
-                        w1.append(String.valueOf(wind.charAt(0)));
+                        int windCounter = 0;
+
+                        TextView[] windArray = {w1,w2,w3};
+
+                        //w1.append(String.valueOf(wind.charAt(0)));
+                        for(int i = 0; i<20;i++)
+                        {
+                            System.out.println("HERE: " + i + " " + (wind.charAt(i)));
+
+                            if (windCounter <= 2)
+                            {
+                                if((String.valueOf(wind.charAt(i))).matches(".*[0-9].*") || (String.valueOf(wind.charAt(i)).matches("-")))
+                                {
+                                    System.out.println("Good: ");// + String.valueOf(temp.charAt(i)));
+                                    windArray[windCounter].append(String.valueOf(wind.charAt(i)));
+
+                                    //i++;
+
+                                }else{
+                                    System.out.println("next: ");
+
+                                    windCounter++;
+                                }
+
+
+                            }
+                        } //end of wind
+
+
 
                     }
 

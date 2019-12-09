@@ -200,12 +200,20 @@
             android:id="@+id/w3"
             android:layout_width="65dp"
             android:layout_height="65dp"
+            android:layout_marginStart="247dp"
+            android:layout_marginLeft="247dp"
+            android:layout_marginTop="683dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginRight="81dp"
+            android:layout_marginBottom="37dp"
             android:gravity="center"
             android:text="1"
             android:textSize="50sp"
             android:typeface="monospace"
-            tools:layout_editor_absoluteX="247dp"
-            tools:layout_editor_absoluteY="683dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView37"
@@ -255,12 +263,20 @@
             android:id="@+id/w2"
             android:layout_width="65dp"
             android:layout_height="65dp"
+            android:layout_marginStart="247dp"
+            android:layout_marginLeft="247dp"
+            android:layout_marginTop="602dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginRight="81dp"
+            android:layout_marginBottom="118dp"
             android:gravity="center"
             android:text=""
             android:textSize="50sp"
             android:typeface="monospace"
-            tools:layout_editor_absoluteX="247dp"
-            tools:layout_editor_absoluteY="602dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/p"
