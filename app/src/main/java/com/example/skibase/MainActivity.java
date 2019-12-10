@@ -42,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
     TextView w1;
     TextView w2;
     TextView w3;
+    TextView s1;
+    TextView s2;
+    TextView s3;
 
 
     @Override
@@ -203,6 +206,42 @@ public class MainActivity extends AppCompatActivity {
                             }
                         } //end of wind
 
+                        //beginning of wind
+
+                        s1 = (TextView) findViewById(R.id.s1);
+                        s2 = (TextView) findViewById(R.id.s2);
+                        s3 = (TextView) findViewById(R.id.s3);
+
+                        int snowCounter = 0;
+
+                        TextView[] snowArray = {w1,w2,w3};
+
+                        //w1.append(String.valueOf(wind.charAt(0)));
+                        for(int i = 0; i<20;i++)
+                        {
+                            System.out.println("HERE: " + i + " " + (conditions.charAt(i)));
+
+                            if (snowCounter <= 2)
+                            {
+                                if((String.valueOf(conditions.charAt(i))).matches(".*[0-9].*") || (String.valueOf(conditions.charAt(i)).matches("-")))
+                                {
+                                    System.out.println("Good: ");// + String.valueOf(temp.charAt(i)));
+                                    snowArray[snowCounter].append(String.valueOf(conditions.charAt(i)));
+
+                                    //i++;
+
+                                }else{
+                                    System.out.println("next: ");
+
+                                    snowCounter++;
+                                }
+
+
+                            }
+                        } //end of wind
+
+                        coldWeather(textViewArray, windArray);
+
 
 
                     }
@@ -217,27 +256,32 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-        /*
-    public void printScreen(StringBuilder w, StringBuilder t, StringBuilder c)
-    {
-        am1 = (TextView) findViewById(R.id.am1);
-        pm1 = (TextView) findViewById(R.id.pm1);
-        n1 = (TextView) findViewById(R.id.n1);
+
+    public void coldWeather(TextView a[], TextView b[]) {
+
+
+        am2 = (TextView) findViewById(R.id.am2);
+        pm2 = (TextView) findViewById(R.id.pm2);
+        n2 = (TextView) findViewById(R.id.n2);
+
+        TextView[] coldArray = {am2,pm2,n2};
+
+        for (int i = 0; i< 3; i++) {
 
 
 
-        LocalTime l = LocalTime.now();
+            int num = Integer.valueOf(a[i].getText().toString());
+            int num2 = Integer.valueOf(b[i].getText().toString());
 
-        if (l.getHour() > 20)
-        {
-            am1.setText(String.valueOf(temp.charAt(0)));
-            pm1.setText(String.valueOf(temp.charAt(1)));
-            n1.setText(String.valueOf(temp.charAt(2)));
+            //System.out.println("NUMBER: " + num + "MINUS: " + (num2/5) + "equals " + (num - (num2/5)));
+
+            int low = num - (num2 / 5) - 1;
+
+            coldArray[i].setText(String.valueOf(low));
         }
+    }
 
 
-
-*/
 
 
 }
