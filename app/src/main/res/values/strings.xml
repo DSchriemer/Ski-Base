@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">skibase</string>
+
+    <string-array name="Mountains">
+        <item>Big White</item>
+        <item>Fernie</item>
+        <item>Whistler</item>
+    </string-array>
 </resources>

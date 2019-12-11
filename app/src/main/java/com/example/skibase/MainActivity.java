@@ -3,6 +3,9 @@ package com.example.skibase;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Button;
 import java.lang.*;
@@ -25,7 +28,7 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     Button getBtn;
     TextView result;
@@ -46,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
     TextView s2;
     TextView s3;
 
+    Spinner spinner;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,12 +58,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //result = (TextView) findViewById(R.id.result);
         getBtn = (Button) findViewById(R.id.launchBtn);
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
         getBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getWebsite();
             }
         });
+
+        ArrayAdapter<String> myAdaptor = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1,
+                getResources().getStringArray(R.array.Mountains));
+        myAdaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(myAdaptor);
+
+        spinner.setOnItemSelectedListener(this);
+
 
     }
 
@@ -107,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
 
-                    Elements conditioners = document.select("div.forecast-table-phrases__container");
+                    Elements conditioners = document.select("div.forecast-table-snow__container");
                     for (Element answerer : conditioners) {
                         conditions.append(answerer.text()).append("\n");
                     }
@@ -214,15 +228,16 @@ public class MainActivity extends AppCompatActivity {
 
                         int snowCounter = 0;
 
-                        TextView[] snowArray = {w1,w2,w3};
+                        TextView[] snowArray = {s1,s2,s3};
 
                         //w1.append(String.valueOf(wind.charAt(0)));
-                        for(int i = 0; i<20;i++)
+                        for(int i = 0; i<7;i++)
                         {
-                            System.out.println("HERE: " + i + " " + (conditions.charAt(i)));
 
-                            if (snowCounter <= 2)
+
+                            if (snowCounter < 3)
                             {
+                                System.out.println("snow: " + i + " " + (conditions.charAt(i)));
                                 if((String.valueOf(conditions.charAt(i))).matches(".*[0-9].*") || (String.valueOf(conditions.charAt(i)).matches("-")))
                                 {
                                     System.out.println("Good: ");// + String.valueOf(temp.charAt(i)));
@@ -232,9 +247,11 @@ public class MainActivity extends AppCompatActivity {
 
                                 }else{
                                     System.out.println("next: ");
-
                                     snowCounter++;
+
+
                                 }
+
 
 
                             }
@@ -282,6 +299,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
+        String text = adapterView.getItemAtPosition(i).toString();
+        System.out.println(text);
 
+        if (text.equals("Fernie"));
+        System.out.println(text);
+            getWebsite();
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
+    }
 }
