@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     TextView s2;
     TextView s3;
 
+    String hill;
+
     Spinner spinner;
 
 
@@ -62,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         getBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getWebsite("Fernie");
+                getWebsite();
             }
         });
 
@@ -83,7 +85,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     //    }
     //}
 
-    private void getWebsite(String a)
+    private void getWebsite()
     {
         new Thread(new Runnable() {
             @Override
@@ -93,19 +95,23 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 final StringBuilder conditions = new StringBuilder();
 
 
-
-
                 try {
 
                     String url;
 
-                    if(a == "Fernie") {
-
+                    if (hill == "Fernie") {
+                        System.out.println("=================================================");
                         url = "https://www.snow-forecast.com/resorts/Fernie/6day/mid";
                     }else{
-                        url = "https://www.snow-forecast.com/resorts/Whistler/6day/mid";
+                        url = "https://www.snow-forecast.com/resorts/Whistler-Blackcomb/6day/mid";
                     }
                     Document document = Jsoup.connect(url).get();
+
+                    wind.setLength(0);
+                    temp.setLength(0);
+                    conditions.setLength(0);
+
+
 
                     //String question = document.select("#question .post-text").text();
                     //builder2.append("Question: " + question).append("\n");
@@ -314,7 +320,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         String text = adapterView.getItemAtPosition(i).toString();
         System.out.println(text);
 
-        getWebsite(text);
+        hill = text;
+
+        getWebsite();
 
     }
 
