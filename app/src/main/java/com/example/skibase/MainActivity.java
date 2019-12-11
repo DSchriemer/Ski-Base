@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         getBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getWebsite();
+                getWebsite("Fernie");
             }
         });
 
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     //    }
     //}
 
-    private void getWebsite()
+    private void getWebsite(String a)
     {
         new Thread(new Runnable() {
             @Override
@@ -93,9 +93,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 final StringBuilder conditions = new StringBuilder();
 
 
+
+
                 try {
 
-                    String url = "https://www.snow-forecast.com/resorts/Fernie/6day/mid";
+                    String url;
+
+                    if(a == "Fernie") {
+
+                        url = "https://www.snow-forecast.com/resorts/Fernie/6day/mid";
+                    }else{
+                        url = "https://www.snow-forecast.com/resorts/Whistler/6day/mid";
+                    }
                     Document document = Jsoup.connect(url).get();
 
                     //String question = document.select("#question .post-text").text();
@@ -305,9 +314,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         String text = adapterView.getItemAtPosition(i).toString();
         System.out.println(text);
 
-        if (text.equals("Fernie"));
-        System.out.println(text);
-            getWebsite();
+        getWebsite(text);
 
     }
 
