@@ -161,6 +161,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         am1 = (TextView) findViewById(R.id.am1);
                         pm1 = (TextView) findViewById(R.id.pm1);
                         n1 = (TextView) findViewById(R.id.n1);
+                        am1.setText("");
+                        pm1.setText("");
+                        n1.setText("");
+
                         //am2 = (TextView) findViewById(R.id.am2);
                        // pm2 = (TextView) findViewById(R.id.pm2);
                         //n2 = (TextView) findViewById(R.id.n2);
@@ -206,6 +210,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         w1 = (TextView) findViewById(R.id.w1);
                         w2 = (TextView) findViewById(R.id.w2);
                         w3 = (TextView) findViewById(R.id.w3);
+                        w1.setText("");
+                        w2.setText("");
+                        w3.setText("");
 
                         int windCounter = 0;
 
@@ -240,6 +247,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         s1 = (TextView) findViewById(R.id.s1);
                         s2 = (TextView) findViewById(R.id.s2);
                         s3 = (TextView) findViewById(R.id.s3);
+                        s1.setText("");
+                        s2.setText("");
+                        s3.setText("");
 
                         int snowCounter = 0;
 
@@ -295,6 +305,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         am2 = (TextView) findViewById(R.id.am2);
         pm2 = (TextView) findViewById(R.id.pm2);
         n2 = (TextView) findViewById(R.id.n2);
+        am2.setText("");
+        pm2.setText("");
+        n2.setText("");
 
         TextView[] coldArray = {am2,pm2,n2};
 
