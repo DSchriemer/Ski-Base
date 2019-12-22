@@ -10,6 +10,11 @@ import android.widget.TextView;
 import android.widget.Button;
 import android.widget.TabHost;
 import java.lang.*;
+import android.os.Bundle;
+
+import android.widget.RadioButton;
+import android.widget.TabHost;
+
 
 import java.text.SimpleDateFormat;
 import java.time.LocalTime;
@@ -29,7 +34,7 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
-public class MainActivity extends TabActivity, AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     Button getBtn;
     TextView result;
@@ -49,6 +54,7 @@ public class MainActivity extends TabActivity, AppCompatActivity implements Adap
     TextView s1;
     TextView s2;
     TextView s3;
+    RadioButton radioButton;
 
     String hill;
 
@@ -64,12 +70,16 @@ public class MainActivity extends TabActivity, AppCompatActivity implements Adap
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TabHost mTabHost = (TabHost) findViewById(R.id.tabs);
-        mTabHost.setup();
-        mTabHost.addTab(mTabHost.newTabSpec("tab0").setIndicator("title1", null).setContent(R.id.tab1));
-        mTabHost.addTab(mTabHost.newTabSpec("tab1").setIndicator("title2", null).setContent(R.id.tab2));
-
-
+        TabHost tabs = (TabHost) findViewById(R.id.tabhost);
+        tabs.setup();
+        TabHost.TabSpec spec = tabs.newTabSpec("tag1");
+        spec.setContent(R.id.tab1);
+        spec.setIndicator("First");
+        tabs.addTab(spec);
+        spec = tabs.newTabSpec("tag2");
+        spec.setContent(R.id.tab2);
+        spec.setIndicator("second");
+        tabs.addTab(spec);
         //result = (TextView) findViewById(R.id.result);
         getBtn = (Button) findViewById(R.id.launchBtn);
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
