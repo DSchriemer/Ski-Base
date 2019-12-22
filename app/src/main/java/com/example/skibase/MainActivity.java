@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Button;
+import android.widget.TabHost;
 import java.lang.*;
 
 import java.text.SimpleDateFormat;
@@ -28,7 +29,7 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class MainActivity extends TabActivity, AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     Button getBtn;
     TextView result;
@@ -54,10 +55,21 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     Spinner spinner;
 
 
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TabHost mTabHost = (TabHost) findViewById(R.id.tabs);
+        mTabHost.setup();
+        mTabHost.addTab(mTabHost.newTabSpec("tab0").setIndicator("title1", null).setContent(R.id.tab1));
+        mTabHost.addTab(mTabHost.newTabSpec("tab1").setIndicator("title2", null).setContent(R.id.tab2));
+
+
         //result = (TextView) findViewById(R.id.result);
         getBtn = (Button) findViewById(R.id.launchBtn);
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
