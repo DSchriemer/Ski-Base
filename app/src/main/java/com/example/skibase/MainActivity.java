@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TabHost tabs = (TabHost) findViewById(R.id.tabhost);
+        /*TabHost tabs = (TabHost) findViewById(R.id.tabhost);
         tabs.setup();
         TabHost.TabSpec spec = tabs.newTabSpec("tag1");
         spec.setContent(R.id.tab1);
@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         spec.setContent(R.id.tab2);
         spec.setIndicator("second");
         tabs.addTab(spec);
+        */
         //result = (TextView) findViewById(R.id.result);
         getBtn = (Button) findViewById(R.id.launchBtn);
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
