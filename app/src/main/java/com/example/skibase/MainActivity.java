@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Button;
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     TextView s2;
     TextView s3;
     RadioButton radioButton;
+    ImageView current;
 
     String hill;
 
@@ -116,6 +118,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 final StringBuilder wind = new StringBuilder();
                 final StringBuilder temp = new StringBuilder();
                 final StringBuilder conditions = new StringBuilder();
+                final StringBuilder current = new StringBuilder();
 
 
                 try {
@@ -154,6 +157,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
                     //Date currentTime = Calendar.getInstance().getTime();
                     //temp.append(currentTime);
+
+                    Elements outsidenow = document.select("div.forecast-table-phrases__container");
+                    for (Element answer : outsidenow) {
+                        current.append(answer.text()).append("\n");
+                    }
 
                     Elements winders = document.select("div.forecast-table-wind__container");
                     for (Element answer : winders) {
