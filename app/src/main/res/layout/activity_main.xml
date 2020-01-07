@@ -468,7 +468,7 @@
         </TabHost>
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/currentweather"
             android:layout_width="190dp"
             android:layout_height="264dp"
             android:layout_marginStart="105dp"

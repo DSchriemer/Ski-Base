@@ -2,6 +2,7 @@ package com.example.skibase;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.Image;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -56,7 +57,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     TextView s2;
     TextView s3;
     RadioButton radioButton;
-    ImageView current;
+    ImageView currentweather;
+    ImageView condition1;
 
     String hill;
 
@@ -189,6 +191,59 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+
+                        //Weather UI
+
+                        //condition1 = (ImageView) findViewById(R.id.currentweather);
+
+                        int conditioncount = 0;
+                        String weather = "";
+
+                        //^[ A-Za-z]+$
+
+                        for(int i = 0; i<70;i++)
+                        {
+                            
+
+                            if (conditioncount <= 0)
+                            {
+                                if((String.valueOf(current.charAt(i))).matches("^[ A-Za-z]+$"))
+                                {
+                                    //System.out.println("Good: ");// + String.valueOf(temp.charAt(i)));
+                                    weather += current.charAt(i);
+
+                                    //i++;
+
+                                }else{
+                                    System.out.println("_____________---------------_____________");
+                                    System.out.println(weather);
+                                    System.out.println("_____________---------------_____________");
+
+                                    conditioncount++;
+                                }
+
+
+                            }
+                        } //end of temperature
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                         //TextView[] textViewArray = {am1,pm1,n1};
                         int tvcounter = 0;
