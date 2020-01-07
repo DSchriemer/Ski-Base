@@ -120,14 +120,20 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
                 try {
 
-                    String url;
+                    String url = "";
 
-                    if (hill == "Fernie") {
-                        System.out.println("=================================================");
+                    if (hill.equals("Fernie")) {
                         url = "https://www.snow-forecast.com/resorts/Fernie/6day/mid";
-                    }else{
-                        url = "https://www.snow-forecast.com/resorts/Whistler-Blackcomb/6day/mid";
                     }
+                    else if (hill.equals("Big White")) {
+                        url = "https://www.snow-forecast.com/resorts/Big-White/6day/mid";
+                    }
+                    else if (hill.equals("Whistler")) {
+                        url = "https://www.snow-forecast.com/resorts/Whistler-Blackcomb/6day/mid";
+                    } else {
+                        System.out.println("ERROR No Selection");
+                    }
+
                     Document document = Jsoup.connect(url).get();
 
                     wind.setLength(0);
