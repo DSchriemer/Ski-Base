@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     RadioButton radioButton;
     ImageView currentweather;
     TextView condition1;
+    TextView Resort;
 
     String hill;
 
@@ -122,15 +123,20 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 try {
 
                     String url = "";
+                    condition1 = (TextView) findViewById(R.id.condition1);
+                    Resort = (TextView) findViewById(R.id.Resort);
 
                     if (hill.equals("Fernie")) {
                         url = "https://www.snow-forecast.com/resorts/Fernie/6day/mid";
+                        Resort.setText("Fernie Alpine Resort");
                     }
                     else if (hill.equals("Big White")) {
                         url = "https://www.snow-forecast.com/resorts/Big-White/6day/mid";
+                        Resort.setText("Big White Ski Resort");
                     }
                     else if (hill.equals("Whistler")) {
                         url = "https://www.snow-forecast.com/resorts/Whistler-Blackcomb/6day/mid";
+                        Resort.setText("Whistler Black Comb");
                     } else {
                         System.out.println("ERROR No Selection");
                     }
@@ -223,24 +229,32 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
                         if (weather.equals("light snow")) {
                             currentweather.setImageResource(R.drawable.snow);
+                            condition1.setText("Light Snow");
                         }
                         else if (weather.equals("mod. snow")) {
                             currentweather.setImageResource(R.drawable.snow);
+                            condition1.setText("Moderate Snow");
+
                         }
                         else if (weather.equals("heavy snow")) {
                             currentweather.setImageResource(R.drawable.snow);
+                            condition1.setText("Heavy Snow");
                         }
                         else if (weather.equals("snow shwrs")) {
                             currentweather.setImageResource(R.drawable.rain1);
+                            condition1.setText("Snow Showers");
                         }
                         else if (weather.equals("some clouds")) {
                             currentweather.setImageResource(R.drawable.partial);
+                            condition1.setText("Some Clouds");
                         }
                         else if (weather.equals("cloudy")) {
                             currentweather.setImageResource(R.drawable.clouds);
+                            condition1.setText("Cloudy");
                         }else
                         {
                             currentweather.setImageResource(R.drawable.clear);
+                            condition1.setText("Clear");
                         }
 
 
