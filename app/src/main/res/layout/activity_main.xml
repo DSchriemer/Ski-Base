@@ -158,12 +158,12 @@
             android:id="@+id/textView2"
             android:layout_width="117dp"
             android:layout_height="44dp"
-            android:layout_marginStart="147dp"
-            android:layout_marginLeft="147dp"
-            android:layout_marginTop="224dp"
-            android:layout_marginEnd="129dp"
-            android:layout_marginRight="129dp"
-            android:layout_marginBottom="517dp"
+            android:layout_marginStart="138dp"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="222dp"
+            android:layout_marginEnd="138dp"
+            android:layout_marginRight="138dp"
+            android:layout_marginBottom="519dp"
             android:text="TODAY"
             android:textSize="36sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -469,19 +469,19 @@
 
         <ImageView
             android:id="@+id/currentweather"
-            android:layout_width="190dp"
-            android:layout_height="264dp"
-            android:layout_marginStart="105dp"
-            android:layout_marginLeft="105dp"
-            android:layout_marginTop="236dp"
-            android:layout_marginEnd="98dp"
-            android:layout_marginRight="98dp"
-            android:layout_marginBottom="285dp"
+            android:layout_width="247dp"
+            android:layout_height="237dp"
+            android:layout_marginStart="73dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="242dp"
+            android:layout_marginEnd="73dp"
+            android:layout_marginRight="73dp"
+            android:layout_marginBottom="306dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/snowing" />
+            app:srcCompat="@drawable/partial" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

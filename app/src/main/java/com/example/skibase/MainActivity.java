@@ -225,9 +225,29 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
                         currentweather = (ImageView) findViewById(R.id.currentweather);
 
-                        if (hill.equals("Fernie")) {
+                        if (weather.equals("light snow")) {
+                            currentweather.setImageResource(R.drawable.snow);
+                        }
+                        else if (weather.equals("mod. snow")) {
+                            currentweather.setImageResource(R.drawable.snow);
+                        }
+                        else if (weather.equals("heavy snow")) {
+                            currentweather.setImageResource(R.drawable.snow);
+                        }
+                        else if (weather.equals("snow shwrs")) {
                             currentweather.setImageResource(R.drawable.rain1);
                         }
+                        else if (weather.equals("some clouds")) {
+                            currentweather.setImageResource(R.drawable.partial);
+                        }
+                        else if (weather.equals("cloudy")) {
+                            currentweather.setImageResource(R.drawable.clouds);
+                        }else
+                        {
+                            currentweather.setImageResource(R.drawable.clear);
+                        }
+
+
 
 
 
