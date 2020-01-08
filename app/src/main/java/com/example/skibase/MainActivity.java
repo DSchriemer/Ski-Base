@@ -194,7 +194,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
                         //Weather UI
 
-                        //condition1 = (ImageView) findViewById(R.id.currentweather);
+
 
                         int conditioncount = 0;
                         String weather = "";
@@ -203,7 +203,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
                         for(int i = 0; i<70;i++)
                         {
-                            
+
 
                             if (conditioncount <= 0)
                             {
@@ -215,16 +215,25 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                                     //i++;
 
                                 }else{
-                                    System.out.println("_____________---------------_____________");
-                                    System.out.println(weather);
-                                    System.out.println("_____________---------------_____________");
 
                                     conditioncount++;
                                 }
 
 
                             }
-                        } //end of temperature
+                        }
+
+                        currentweather = (ImageView) findViewById(R.id.currentweather);
+
+                        if (hill.equals("Fernie")) {
+                            currentweather.setImageResource(R.drawable.rain1);
+                        }
+
+
+
+
+
+                        //end of Weather UI
 
 
 
