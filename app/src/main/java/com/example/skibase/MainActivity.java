@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     TextView s3;
     RadioButton radioButton;
     ImageView currentweather;
-    ImageView condition1;
+    TextView condition1;
 
     String hill;
 
@@ -86,14 +86,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         tabs.addTab(spec);
         */
         //result = (TextView) findViewById(R.id.result);
-        getBtn = (Button) findViewById(R.id.launchBtn);
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
-        getBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getWebsite();
-            }
-        });
+
+
+
 
         ArrayAdapter<String> myAdaptor = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1,
                 getResources().getStringArray(R.array.Mountains));
