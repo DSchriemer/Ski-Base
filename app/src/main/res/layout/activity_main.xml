@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -450,7 +450,7 @@
             app:srcCompat="@drawable/partial" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/Profile_Button"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="212dp"
             android:layout_height="56dp"
@@ -466,7 +466,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/Conditions_Button"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="212dp"
             android:layout_height="56dp"
@@ -481,6 +481,6 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
 
 </androidx.core.widget.NestedScrollView>
