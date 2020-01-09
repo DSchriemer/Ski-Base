@@ -7,7 +7,7 @@
     android:paddingTop="?attr/actionBarSize">
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/Profile_Button"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="212dp"
         android:layout_height="56dp"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Conditions_Button"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="212dp"
         android:layout_height="56dp"

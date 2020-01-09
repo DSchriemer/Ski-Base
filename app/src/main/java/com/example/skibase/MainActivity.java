@@ -2,6 +2,7 @@ package com.example.skibase;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.Image;
 import android.view.View;
 import android.widget.AdapterView;
@@ -65,6 +66,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     Spinner spinner;
 
+    Button Profile_Button;
+    Button Condition_Button;
+
 
 
 
@@ -75,18 +79,24 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*TabHost tabs = (TabHost) findViewById(R.id.tabhost);
-        tabs.setup();
-        TabHost.TabSpec spec = tabs.newTabSpec("tag1");
-        spec.setContent(R.id.tab1);
-        spec.setIndicator("First");
-        tabs.addTab(spec);
-        spec = tabs.newTabSpec("tag2");
-        spec.setContent(R.id.tab2);
-        spec.setIndicator("second");
-        tabs.addTab(spec);
-        */
-        //result = (TextView) findViewById(R.id.result);
+        Profile_Button = (Button)findViewById(R.id.Profile_Button);
+        Condition_Button = (Button)findViewById(R.id.Conditions_Button);
+
+        Condition_Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openActivity1();
+            }
+        });
+
+        Profile_Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openActivity2();
+            }
+        });
+
+
 
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
@@ -103,6 +113,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
 
     }
+
+    public void openActivity1(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void openActivity2(){
+        Intent intent = new Intent(this, Main2Activity.class);
+        startActivity(intent);
+    }
+
+
 
    // @Override
     //public void onClick(View view) {
