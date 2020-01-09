@@ -122,6 +122,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 final StringBuilder current = new StringBuilder();
 
 
+
+
                 try {
 
                     String url = "";
