@@ -87,6 +87,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         tabs.addTab(spec);
         */
         //result = (TextView) findViewById(R.id.result);
+
+
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
 
 
