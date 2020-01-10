@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "127408228352",
+    "firebase_url": "https://skibase-1f07a.firebaseio.com",
+    "project_id": "skibase-1f07a",
+    "storage_bucket": "skibase-1f07a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127408228352:android:11f16e0016b93b37e7f0e5",
+        "android_client_info": {
+          "package_name": "com.example.skibase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127408228352-kobp159fcege74pb8s66nikm2febg3ki.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.skibase",
+            "certificate_hash": "dfb5be26720654f4eeea8a7029597924c93a5ce0"
+          }
+        },
+        {
+          "client_id": "127408228352-8culsc6j91s5mnvqjssg2iqrnu436cah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA-wUye-ntuT68TUAjsNjKYyxe3vkxXgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127408228352-8culsc6j91s5mnvqjssg2iqrnu436cah.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

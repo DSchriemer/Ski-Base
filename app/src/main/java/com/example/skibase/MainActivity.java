@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     public void openActivity2(){
-        Intent intent = new Intent(this, Main2Activity.class);
+        Intent intent = new Intent(this, Main4Activity.class);
         startActivity(intent);
     }
 

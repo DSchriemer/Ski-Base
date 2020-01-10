@@ -6,37 +6,10 @@
     android:layout_height="match_parent"
     android:paddingTop="?attr/actionBarSize">
 
-    <Button
-        android:id="@+id/Profile_Button"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="212dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="189dp"
-        android:layout_marginLeft="189dp"
-        android:layout_marginBottom="732dp"
-        android:background="@drawable/button_background"
-        android:text="Profile"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/Conditions_Button"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="212dp"
-        android:layout_height="56dp"
-        android:layout_marginEnd="181dp"
-        android:layout_marginRight="181dp"
-        android:layout_marginBottom="732dp"
-        android:background="@drawable/button_background"
-        android:text="Conditions"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/clear" />
 </RelativeLayout>
 
