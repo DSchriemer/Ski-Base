@@ -44,7 +44,7 @@ public class Main4Activity extends AppCompatActivity {
                 if(dataSnapshot.exists())
                 {
                     maxid=(dataSnapshot.getChildrenCount());
-                }
+;                }
             }
 
             @Override
@@ -56,14 +56,12 @@ public class Main4Activity extends AppCompatActivity {
         btnsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Toast.makeText(Main4Activity.this, "Data ddddadded!",Toast.LENGTH_LONG);
                 int agea= Integer.parseInt(txtage.getText().toString().trim());
                 member.setName(txtname.getText().toString().trim());
                 member.setAge(agea);
-                reff.child("member1").setValue(member);
-                reff.child(String.valueOf(maxid+1)).setValue("member");
-
-                Toast.makeText(Main4Activity.this, "Data added!",Toast.LENGTH_LONG);
+                //reff.child("member1").setValue(member);
+                reff.child(String.valueOf(maxid+1)).setValue(member);
+                Toast.makeText(Main4Activity.this, "Data added!",Toast.LENGTH_LONG).show();
             }
         });
 

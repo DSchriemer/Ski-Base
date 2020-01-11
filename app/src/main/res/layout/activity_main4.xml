@@ -10,50 +10,144 @@
         android:id="@+id/txtname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginRight="144dp"
-        android:layout_marginBottom="690dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="567dp" />
 
     <EditText
         android:id="@+id/txtage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
-        android:layout_marginTop="132dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginRight="144dp"
-        android:layout_marginBottom="608dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="636dp" />
 
     <Button
         android:id="@+id/btnsave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="241dp"
-        android:layout_marginLeft="241dp"
-        android:layout_marginTop="239dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginRight="64dp"
-        android:layout_marginBottom="498dp"
         android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="706dp" />
+
+    <TextView
+        android:id="@+id/OVERVIEW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OVERVIEW"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="62dp" />
+
+    <TextView
+        android:id="@+id/OVERVIEW7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD DAY"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="504dp" />
+
+    <TextView
+        android:id="@+id/OVERVIEW2"
+        android:layout_width="139dp"
+        android:layout_height="35dp"
+        android:text="SKI DAYS"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <TextView
+        android:id="@+id/OVERVIEW3"
+        android:layout_width="139dp"
+        android:layout_height="35dp"
+        android:text="INJURIES"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <TextView
+        android:id="@+id/OVERVIEW8"
+        android:layout_width="175dp"
+        android:layout_height="36dp"
+        android:text="SKI RESORTS"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="352dp" />
+
+    <TextView
+        android:id="@+id/OVERVIEW4"
+        android:layout_width="172dp"
+        android:layout_height="38dp"
+        android:text="POWDER DAYS"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="256dp" />
+
+    <TextView
+        android:id="@+id/OVERVIEW5"
+        android:layout_width="175dp"
+        android:layout_height="34dp"
+        android:text="BLUEBIRD DAYS"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <TextView
+        android:id="@+id/OVERVIEW6"
+        android:layout_width="139dp"
+        android:layout_height="35dp"
+        android:text="SKI RUNS"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="72dp"
+        android:layout_height="34dp"
+        android:text="NUM1"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="116dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="72dp"
+        android:layout_height="34dp"
+        android:text="NUM2"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="72dp"
+        android:layout_height="34dp"
+        android:text="NUM3"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="72dp"
+        android:layout_height="34dp"
+        android:text="NUM4"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="256dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="72dp"
+        android:layout_height="34dp"
+        android:text="NUM5"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="72dp"
+        android:layout_height="34dp"
+        android:text="NUM6"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="352dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
