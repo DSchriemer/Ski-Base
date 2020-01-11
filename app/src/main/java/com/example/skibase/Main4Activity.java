@@ -32,7 +32,7 @@ public class Main4Activity extends AppCompatActivity {
         Toast.makeText(this, "Connected to Database", Toast.LENGTH_SHORT).show();
 
         txtage = (EditText) findViewById(R.id.txtage);
-        txtname = (EditText) findViewById(R.id.txtname);
+        //txtname = (EditText) findViewById(R.id.txtname);
         btnsave = (Button) findViewById(R.id.btnsave);
 
         member = new Member();
@@ -57,7 +57,7 @@ public class Main4Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int agea= Integer.parseInt(txtage.getText().toString().trim());
-                member.setName(txtname.getText().toString().trim());
+                //member.setName(txtname.getText().toString().trim());
                 member.setAge(agea);
                 //reff.child("member1").setValue(member);
                 reff.child(String.valueOf(maxid+1)).setValue(member);
