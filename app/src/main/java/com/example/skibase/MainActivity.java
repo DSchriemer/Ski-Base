@@ -163,7 +163,112 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     else if (hill.equals("Whistler")) {
                         url = "https://www.snow-forecast.com/resorts/Whistler-Blackcomb/6day/mid";
                         Resort.setText("Whistler Black Comb");
-                    } else {
+                    }
+                    else if (hill.equals("Cypress")) {
+                        url = "https://www.snow-forecast.com/resorts/Cypress-Mountain/6day/mid";
+                        Resort.setText("Cypress");
+                    }
+                    else if (hill.equals("Grouse Mountain")) {
+                        url = "https://www.snow-forecast.com/resorts/Grouse-Mountain/6day/mid";
+                        Resort.setText("Grouse Mountain");
+                    }
+                    else if (hill.equals("Kicking Horse")) {
+                        url = "https://www.snow-forecast.com/resorts/Kicking-Horse/6day/mid";
+                        Resort.setText("Kicking Horse");
+                    }
+                    else if (hill.equals("Mount Washington")) {
+                        url = "https://www.snow-forecast.com/resorts/Mount-Washington/6day/mid";
+                        Resort.setText("Mount Washington");
+                    }
+                    else if (hill.equals("Mount Seymour")) {
+                        url = "https://www.mountain-forecast.com/peaks/Mount-Seymour";
+                        Resort.setText("Mount Seymour");
+                    }
+                    else if (hill.equals("Powder King")) {
+                        url = "https://www.snow-forecast.com/resorts/PowderKing/6day/mid";
+                        Resort.setText("Powder King");
+                    }
+                    else if (hill.equals("Revelstoke")) {
+                        url = "https://www.snow-forecast.com/resorts/Revelstoke/6day/mid";
+                        Resort.setText("Revelstoke");
+                    }
+                    else if (hill.equals("Silver Star")) {
+                        url = "https://www.mountain-forecast.com/peaks/Silver-Star-Mountain";
+                        Resort.setText("Silver Star");
+                    }
+                    else if (hill.equals("Sun Peaks")) {
+                        url = "https://www.snow-forecast.com/resorts/Sun-Peaks/6day/mid";
+                        Resort.setText("Sun Peaks");
+                    }
+                    else if (hill.equals("Squaw Valley")) {
+                        url = "https://www.snow-forecast.com/resorts/Squaw-Valley-USA/6day/mid";
+                        Resort.setText("Squaw Valley");
+                    }
+                    else if (hill.equals("Purgatory")) {
+                        url = "https://www.snow-forecast.com/resorts/Purgatory-Resort/6day/mid";
+                        Resort.setText("Purgatory");
+                    }
+                    else if (hill.equals("Snowmass")) {
+                        url = "https://www.snow-forecast.com/resorts/Snowmass/6day/mid";
+                        Resort.setText("Snowmass");
+                    }
+                    else if (hill.equals("Sun Valley")) {
+                        url = "https://www.snow-forecast.com/resorts/ShigaKogenSunValley/6day/mid";
+                        Resort.setText("Sun Valley");
+                    }
+                    else if (hill.equals("Buttermilk")) {
+                        url = "https://www.snow-forecast.com/resorts/Buttermilk/6day/mid";
+                        Resort.setText("Buttermilk");
+                    }
+                    else if (hill.equals("Telluride")) {
+                        url = "https://www.snow-forecast.com/resorts/Telluride/6day/mid";
+                        Resort.setText("Telluride");
+                    }
+                    else if (hill.equals("Verbier")) {
+                        url = "https://www.snow-forecast.com/resorts/Verbier/6day/mid";
+                        Resort.setText("Verbier");
+                    }
+                    else if (hill.equals("Grindelwald")) {
+                        url = "https://www.snow-forecast.com/resorts/Grindelwald/6day/mid";
+                        Resort.setText("Grindelwald");
+                    }
+                    else if (hill.equals("Les Arcs")) {
+                        url = "https://www.snow-forecast.com/resorts/Les-Arcs/6day/mid";
+                        Resort.setText("Les Arcs");
+                    }
+                    else if (hill.equals("Morzine")) {
+                        url = "https://www.snow-forecast.com/resorts/Morzine/6day/mid";
+                        Resort.setText("Morzine");
+                    }
+                    else if (hill.equals("Whistler")) {
+                        url = "https://www.snow-forecast.com/resorts/Whistler-Blackcomb/6day/mid";
+                        Resort.setText("Whistler Black Comb");
+                    }
+                    else if (hill.equals("Méribel")) {
+                        url = "https://www.snow-forecast.com/resorts/Meribel/6day/mid";
+                        Resort.setText("Méribel");
+                    }
+                    else if (hill.equals("Alpe d'Huez")) {
+                        url = "https://www.snow-forecast.com/resorts/Alpe-d-Huez/6day/mid";
+                        Resort.setText("Alpe d'Huez");
+                    }
+                    else if (hill.equals("Serre Chevalier")) {
+                        url = "https://www.snow-forecast.com/resorts/Serre-Chevalier/6day/mid";
+                        Resort.setText("Serre Chevalier");
+                    }
+                    else if (hill.equals("Arber")) {
+                        url = "https://www.snow-forecast.com/resorts/Whistler-Blackcomb/6day/mid";
+                        Resort.setText("Arber");
+                    }
+                    else if (hill.equals("Oberaudorf Hocheck")) {
+                        url = "https://www.snow-forecast.com/resorts/Oberaudorf/6day/mid";
+                        Resort.setText("Oberaudorf Hocheck");
+                    }
+                    else if (hill.equals("Ochsenkopf")) {
+                        url = "https://www.snow-forecast.com/resorts/Ochsenkopf/6day/mid";
+                        Resort.setText("Ochsenkopf");
+                    }
+                    else {
                         System.out.println("ERROR No Selection");
                     }
 

@@ -5,6 +5,31 @@
         <item>Big White</item>
         <item>Fernie</item>
         <item>Whistler</item>
+        <item>Cypress</item>
+        <item>Grouse Mountain</item>
+        <item>Kicking Horse</item>
+        <item>Mount Washington</item>
+        <item>Mount Seymour</item>
+        <item>Powder King</item>
+        <item>Revelstoke</item>
+        <item>Silver Star</item>
+        <item>Sun Peaks</item>
+        <item>Squaw Valley</item>
+        <item>Purgatory</item>
+        <item>Snowmass</item>
+        <item>Sun Valley</item>
+        <item>Buttermilk</item>
+        <item>Telluride</item>
+        <item>Verbier</item>
+        <item>Grindelwald</item>
+        <item>Les Arcs</item>
+        <item>Morzine</item>
+        <item>Meribel</item>
+        <item>Alpe dHuez</item>
+        <item>Serre Chevalier</item>
+        <item>Arber</item>
+        <item>Ochsenkopf</item>
+        <item>Oberaudorf Hocheck</item>
     </string-array>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_home">Home</string>

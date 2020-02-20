@@ -29,42 +29,10 @@ public class Main4Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
 
-        Toast.makeText(this, "Connected to Database", Toast.LENGTH_SHORT).show();
 
-        txtage = (EditText) findViewById(R.id.txtage);
-        //txtname = (EditText) findViewById(R.id.txtname);
-        btnsave = (Button) findViewById(R.id.btnsave);
 
-        member = new Member();
-
-        reff = FirebaseDatabase.getInstance().getReference().child("Member");
-        reff.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.exists())
-                {
-                    maxid=(dataSnapshot.getChildrenCount());
-;                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-
-        btnsave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int agea= Integer.parseInt(txtage.getText().toString().trim());
-                //member.setName(txtname.getText().toString().trim());
-                member.setAge(agea);
-                //reff.child("member1").setValue(member);
-                reff.child(String.valueOf(maxid+1)).setValue(member);
-                Toast.makeText(Main4Activity.this, "Data added!",Toast.LENGTH_LONG).show();
-            }
-        });
+        }
 
 
     }
-}
+
