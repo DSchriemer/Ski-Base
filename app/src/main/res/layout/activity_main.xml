@@ -458,7 +458,7 @@
             android:layout_marginLeft="189dp"
             android:layout_marginBottom="732dp"
             android:background="@drawable/button_background"
-            android:text="Profile"
+            android:text="Ski Log"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
