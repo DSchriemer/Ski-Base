@@ -1,8 +1,9 @@
 ![](readmeimage.png)
+![](logshot.png)
 
 # SKI BASE
 
-Ski Base is an android app that is made to help skiers and snowboarders quickly check mountain conditions for ski hills around the world. The app was developed using Java and the JSoup web scraping library.
+Ski Base is an android app that is made to help skiers and snowboarders quickly check mountain conditions for ski hills around the world while tracking their trips. The app was developed using Java, the JSoup web scraping library, and SQLite.
 
 ## Getting Started
 
