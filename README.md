@@ -1,4 +1,5 @@
 ![](readmeimage.png)
+![](logshot.png)
 
 # SKI BASE
 
