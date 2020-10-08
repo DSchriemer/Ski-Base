@@ -18,4 +18,4 @@ To run the app on your phone or computer:
 
 ### Feedback
 
-I'm always looking for ideas and advice so feel free to contact me if you have any suggestion or if your ski hill is missing from the app
+I'm always looking for ideas and advice so feel free to contact me if you have any suggestions or if your ski hill is missing from the app
